@@ -1,0 +1,27 @@
+'''
+Your task is simple. Given a number N, print all of its factors.
+
+Input Format
+
+Only one number, N.
+
+Constraints
+
+1 <= N <= 10^6
+
+Output Format
+
+Output all the factors of the number N separated by a space on one line.
+
+Sample Input 0
+
+6
+Sample Output 0
+
+1 2 3 6
+'''
+n=int(input())
+for i in range(1,n+1):
+    if n%i==0:
+        print(i,end=" ")
+    
