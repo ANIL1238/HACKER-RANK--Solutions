@@ -1,0 +1,65 @@
+You are given an array A of N elements : a0, a1, a2... an-1
+
+Do the following for every element ai :
+
+if i is even : ai = ai * 2
+
+if i is odd : ai = ai / 2
+
+Print the final array
+
+Input Format
+
+First line contains number N, the size of array A. Second line contains N integers, the elements of array A.
+
+Constraints
+
+1 <= N <= 15
+1 <= A <= 50
+
+Output Format
+
+Output N numbers, the final array.
+
+Sample Input 0
+
+5
+2 4 6 8 10
+Sample Output 0
+
+4 2 12 4 20
+Explanation 0
+
+a0 = 2 * 2 = 4 a1 = 4 / 2 = 2 a2 = 6 * 2 = 12 a3 = 8 / 2 = 4 a4 = 10 * 2 = 20
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+in c lang
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int i,a[100],n;
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        scanf("%d",&a[i]);
+        
+    }
+    for(i=0;i<n;i++)
+    {
+        if(i%2==0)
+        {
+            printf("%d ",a[i]*2);
+        }
+        else
+        {
+            printf("%d ",a[i]/2);
+        }
+    }
+    
+    
+    return 0;
+}
