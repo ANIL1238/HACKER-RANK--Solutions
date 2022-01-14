@@ -1,0 +1,30 @@
+Write a program that takes as input one decimal number N, and prints its binary form.
+
+Input Format
+
+One number N.
+
+Constraints
+
+0 <= N <= 10^18
+
+Output Format
+
+Binary representation of the number N.
+
+Sample Input 0
+
+2
+Sample Output 0
+
+10
+_-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-_
+python 3
+_-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-__-_-_-_-_
+def dBinary(num):
+    if num > 1:
+        dBinary(num // 2)
+    print(num % 2, end='')
+
+n = int(input(""))
+dBinary(n)
