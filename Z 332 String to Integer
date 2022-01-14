@@ -1,0 +1,26 @@
+Write a function that takes a numeric string like "123" as input and converts it to integer and returns it.
+
+Sample Input 0
+
+12422
+Sample Output 0
+
+12422
+--------------------------------------------------------
+------------------------------------------------------
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+int main()
+{
+
+    char str1[10];
+    scanf("%s",&str1);
+
+    int myint1 = atoi(str1);
+    
+    printf("%d", myint1);
+  
+
+    return 0;
+}
